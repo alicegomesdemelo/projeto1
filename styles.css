@@ -79,3 +79,13 @@ body {
 a:hover {
   color: #ff9900;
 }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
