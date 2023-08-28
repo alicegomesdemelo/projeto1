@@ -75,13 +75,4 @@
 .restaurant a:hover {
   color: YellowGreen; 
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
 
