@@ -33,7 +33,9 @@
 .restaurants-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
+  min-height: calc(100vh - 120px);
 }
 
 .restaurants-list {
@@ -85,7 +87,7 @@ a:hover {
   color: #fff;
   text-align: center;
   padding: 10px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
