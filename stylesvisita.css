@@ -1,49 +1,33 @@
+/* Estilos Globais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.album {
+.book {
+  width: 400px;
+  height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  perspective: 1000px;
+  margin: 50px auto;
 }
 
 .page {
-  position: absolute;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#page1:checked ~ #page1-content,
-#page2:checked ~ #page2-content {
-  opacity: 1;
+  transition: transform 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transform-origin: right;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 .page img {
-  max-height: 80%;
-  max-width: 80%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
-.page-nav {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
+.book:hover .page {
+  transform: rotateY(-180deg);
 }
-
-.page-button {
-  font-size: 24px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
