@@ -3,7 +3,7 @@ float:left;
 width: 20%;
 padding: 10px;
 box-sizing: border-box;
-display: inline-block;
+display: inline;
 }
 .foto img{
   width: 100%;
