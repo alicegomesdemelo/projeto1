@@ -7,11 +7,13 @@ box-sizing: border-box;
 .foto img{
   width: 100%;
   display: block;
+  
 }
 .fechar{display: none}
 #galeria .foto:target{
   position: fixed;
   width: 50%;
+  height: 50%;
   top: 15px;
   left: 25%;
   padding: 5px;
