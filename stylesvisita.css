@@ -9,7 +9,7 @@ box-sizing: border-box;
   display: block;
   
 }
-.fechar{display: none}
+.detalhes{display: none}
 #galeria .foto:target{
   position: relative;
   width: 50%;
@@ -19,6 +19,6 @@ box-sizing: border-box;
   border: solid 1px #333;
   background: #fff;
 }
-.foto:target .fechar{
+.foto:target .detalhes{
   display: block;
 }
