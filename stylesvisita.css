@@ -10,7 +10,7 @@ box-sizing: border-box;
 }
 .fechar{display: none}
 #galeria .foto:target{
-  position: relative;
+  position: fixed;
   width: 50%;
   top: 15px;
   bottom: 15px;
