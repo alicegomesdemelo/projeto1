@@ -3,11 +3,10 @@ float:left;
 width: 20%;
 padding: 10px;
 box-sizing: border-box;
-display: inline;
 }
 .foto img{
   width: 100%;
-  display: block;
+  display: inline;
 }
 .fechar{display: none}
 #galeria .foto:target{
