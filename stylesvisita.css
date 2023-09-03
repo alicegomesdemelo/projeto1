@@ -3,7 +3,6 @@ float:left;
 width: 20%;
 padding: 10px;
 box-sizing: border-box;
-background-size: 20% auto
 }
 .foto img{
   width: 100%;
@@ -11,7 +10,7 @@ background-size: 20% auto
 }
 .fechar{display: none}
 #galeria .foto:target{
-  position: fixed;
+  position: relative;
   width: 50%;
   top: 15px;
   left: 25%;
