@@ -9,6 +9,10 @@
     display: block;
     object-fit: cover;
 }
+.foto{
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
 .detalhes{display:none}
 #galeria .foto:target{
     position:relative;
@@ -28,8 +32,4 @@
 }
 .p{
   margin-bottom: 15px;
-}
-.exemplo{
-    overflow: hidden;
-    border: 1px solid #ccc;
 }
