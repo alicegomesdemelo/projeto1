@@ -7,7 +7,7 @@
 .foto img{
     width: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
 .foto {
 width: 500px;
@@ -16,10 +16,10 @@ border: 1px solid #ccc;
 }
 .detalhes{display:none}
 #galeria .foto:target{
-    position:fixed;
+    position:relative;
     width: 50%;
-    top:50px;
-    left:50%;
+    top:15px;
+    left:25%;
     padding: 10px;
     border: solid 1px #333;
     background: #fff;
