@@ -3,12 +3,13 @@
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .foto img{
     width: 100%;
     display: block;
     object-fit: cover;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
 .detalhes{display:none}
 #galeria .foto:target{
@@ -18,6 +19,7 @@
     left:25%;
     padding: 10px;
     border: solid 1px #333;
+    background: #fff;
 }
 .foto:target .detalhes{
     display: block;
