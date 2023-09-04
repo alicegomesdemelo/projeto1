@@ -34,5 +34,9 @@ display: block;
   max-width: 800px;
   margin: 0 auto;
 }
+#relato .p{
+    margin-bottom: 15px;
+
+}
 .foto:target .detalhes{
   display: block;
