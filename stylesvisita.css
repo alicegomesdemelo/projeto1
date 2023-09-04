@@ -7,7 +7,7 @@ box-sizing: border-box;
 .foto img{
   width: 100%;
   display: block;
-  
+  object-fit: cover;
 }
 .detalhes{display: none}
 #galeria .foto:target{
