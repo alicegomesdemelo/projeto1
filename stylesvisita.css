@@ -8,8 +8,6 @@
     width: 100%;
     display: block;
     object-fit: cover;
-    overflow: hidden;
-    border: 1px solid #ccc;
 }
 .detalhes{display:none}
 #galeria .foto:target{
@@ -30,4 +28,8 @@
 }
 .p{
   margin-bottom: 15px;
+}
+.exemplo{
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
