@@ -10,8 +10,8 @@
     object-fit: cover;
 }
 .foto {
-width: 340px;
-height: 340px;
+width: 500px;
+height: 500px;
 border: 1px solid #ccc;
 }
 .detalhes{display:none}
