@@ -25,6 +25,7 @@ display: block;
   padding: 5px;
   border: solid 1px #333;
   background: #fff;
+  transform: scale(1); 
 }
 .foto:target .detalhes{
   display: block;
