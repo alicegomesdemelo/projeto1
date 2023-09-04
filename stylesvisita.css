@@ -1,37 +1,49 @@
-#galeria > div{
-    float:left;
+#galeria > div {
+    float: left;
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
 }
-.foto img{
+
+.foto img {
     width: 100%;
     display: block;
-    object-fit: contain;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    height: 200px; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
-.foto {
-width: 800px;
-heigth: 800px;
-border: 1px solid #ccc;
+
+.detalhes {
+    display: none;
 }
-.detalhes{display:none}
-#galeria .foto:target{
-    position:relative;
+
+#galeria .foto:target {
+    position: relative;
     width: 50%;
-    top:15px;
-    left:25%;
+    top: 15px;
+    left: 25%;
     padding: 10px;
     border: solid 1px #333;
     background: #fff;
 }
-.foto:target .detalhes{
+
+.foto:target .detalhes {
     display: block;
 }
-.relato{
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+
+.relato {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
-.p{
-  margin-bottom: 10px;
-  margin-left: 15px;
+
+.p {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.foto:target img {
+    object-fit: contain;
 }
