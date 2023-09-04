@@ -4,10 +4,17 @@ width: 20%;
 padding: 10px;
 box-sizing: border-box;
 }
+.foto {
+width: 200px;
+height: 200px;
+overflow: hidden;
+border: 1px solid #ccc;
+    }
 .foto img{
-  width: 100%;
-  display: block;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
 }
 .detalhes{display: none}
 #galeria .foto:target{
