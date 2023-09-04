@@ -3,6 +3,7 @@
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .foto img{
     width: 100%;
