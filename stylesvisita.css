@@ -1,67 +1,29 @@
-input[type="radio"] {
-    display: none;
-}
-
-label img {
-            width: 100px; 
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.3s ease; 
-        }
-.imagem-expandida {
-            display: none;
-        }
-
-        input[type="radio"]:checked + label img {
-            transform: scale(1.2); 
-        }
-
-        input[type="radio"]:checked + label + .imagem-expandida {
-            display: block;
-            text-align: center;
-        }
-
-        .imagem-expandida img {
-            max-width: 100%; 
-        }
-#galeria > div {
-float:left;
-width: 20%;
-padding: 10px;
-box-sizing: border-box;
-}
-.foto {
-width: 200px;
-height: 200px;
-overflow: hidden;
-border: 1px solid #ccc;
+#galeria > div{
+    float:left;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .foto img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
+    width: 100%;
+    display: block;
 }
-.detalhes{display: none}
+.detalhes{display:none}
 #galeria .foto:target{
-  position: fixed;
-  width: 50%;
-  top: 15px;
-  left: 25%;
-  padding: 5px;
-  border: solid 1px #333;
-  background: #fff;
+    position:relative;
+    width: 50%;
+    top:15px;
+    left:25%;
+    padding: 10px;
+    border: solid 1px #333;
 }
 .foto:target .detalhes{
-  display: block;
+    display: block;
+}
 .relato{
   font-family: Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
 }
-#relato .p{
+.p{
   margin-bottom: 15px;
 }
