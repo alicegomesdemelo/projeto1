@@ -26,6 +26,8 @@ display: block;
   border: solid 1px #333;
   background: #fff;
 }
+.foto:target .detalhes{
+  display: block;
 .relato{
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -35,8 +37,5 @@ display: block;
   margin: 0 auto;
 }
 #relato .p{
-    margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
-.foto:target .detalhes{
-  display: block;
