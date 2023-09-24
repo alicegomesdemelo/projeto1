@@ -62,11 +62,11 @@ const prevNextMusic = (type = "next") => {
   } else if (type == "prev" && index === 0) {
     index = songs.length;
   } else {
-    radio = type === "prev" && radio ? radio - 1 : radio + 1;
+    index = type === "prev" && index ? index - 1 : index + 1;
   }
 
-  player.src = songs[radio].src;
-  musicName.innerHTML = songs[radio].name;
+  player.src = songs[index].src;
+  musicName.innerHTML = songs[index].name;
   if (type !== "init") playPause();
 
   updateTime();
