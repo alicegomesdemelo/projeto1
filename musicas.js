@@ -1,7 +1,7 @@
 export default [
   {
     src: "./musicas/Dude - musica1.mp3",
-    name: "Thats what i like - Bruno Mars",
+    name: "THATS what i like - Bruno Mars",
   },
   {
     src: "./musicas/Dude - musica2.mp3",
@@ -9,7 +9,7 @@ export default [
   },
    {
     src: "./musicas/Dude - musica1.mp3",
-    name: "Thats what i like - Bruno Mars",
+    name: "THATS what i like - Bruno Mars",
   },
   {
     src: "./musicas/Dude - musica2.mp3",
@@ -17,7 +17,7 @@ export default [
   },
     {
     src: "./musicas/Dude - musica1.mp3",
-    name: "Thats what i like - Bruno Mars",
+    name: "THATS what i like - Bruno Mars",
   },
   {
     src: "./musicas/Dude - musica2.mp3",
