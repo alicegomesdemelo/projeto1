@@ -1,82 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="stylesmidias.css">
-</head>
-<body>
-  <div class="container">
-    <div class="title">Player de Músicas</div>
-    <div class="player">
-      <img src="cover1.jpg" class="cover" id="cover">
-      <div class="play" id="play">
-        <div class="play-icon" id="play-icon"></div>
-        <div class="pause-icon hidden" id="pause-icon"></div>
-      </div>
-      <div class="next" id="next">
-        <div class="next-icon"></div>
-      </div>
-    </div>
-  </div>
-  <script>
-    // Array com as URLs das capas das músicas
-    var covers = ["cover1.jpg", "cover2.jpg", "cover3.jpg", "cover4.jpg", "cover5.jpg", "cover6.jpg", "cover7.jpg", "cover8.jpg", "cover9.jpg", "cover10.jpg"];
-    
-    // Array com as URLs das músicas em formato MP3
-    var songs = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3", "song5.mp3", "song6.mp3", "song7.mp3", "song8.mp3", "song9.mp3", "song10.mp3"];
-    
-    // Variável para armazenar o índice da música atual
-    var current = 0;
-    
-    // Variável para armazenar o objeto de áudio
-    var audio = new Audio(songs[current]);
-    
-    // Função para tocar ou pausar a música
-    function playPause() {
-      // Se o áudio estiver pausado, toca e muda os ícones
-      if (audio.paused) {
-        audio.play();
-        document.getElementById("play-icon").classList.add("hidden");
-        document.getElementById("pause-icon").classList.remove("hidden");
-      }
-      // Se o áudio estiver tocando, pausa e muda os ícones
-      else {
-        audio.pause();
-        document.getElementById("play-icon").classList.remove("hidden");
-        document.getElementById("pause-icon").classList.add("hidden");
-      }
-    }
-    
-    // Função para passar para a próxima música
-    function nextSong() {
-      // Incrementa o índice da música atual
-      current++;
-      
-      // Se o índice for maior que o tamanho do array, volta para o início
-      if (current >= songs.length) {
-        current = 0;
-      }
-      
-      // Muda a URL do áudio para a próxima música
-      audio.src = songs[current];
-      
-      // Muda a URL da imagem para a próxima capa
-      document.getElementById("cover").src = covers[current];
-      
-      // Toca a música
-      audio.play();
-      
-      // Muda os ícones para mostrar que está tocando
-      document.getElementById("play-icon").classList.add("hidden");
-      document.getElementById("pause-icon").classList.remove("hidden");
-    }
-    
-    // Adiciona um evento de clique no botão de play/pause
-    document.getElementById("play").addEventListener("click", playPause);
-    
-    // Adiciona um evento de clique no botão de próxima música
-    document.getElementById("next").addEventListener("click", nextSong);
-  </script>
-</body>
+<html>
+  <head>
+    <title>Audio e Video</title>
+  </head>
+      <body>
+        <h1>Música 1</h1>
+  <audio controls>
+	  <source src="musica1.mp3" type="audio/mpeg">
+</audio>
+	<h1>Música 2</h1>
+  <audio controls>
+	  <source src="musica2.mp3" type="audio/mpeg">
+</audio>
+	<h1>Vídeo 1</h1>
+<video width="320" height="240" controls>
+  <source src="video1.mp4" type="video/mp4">
+</video>
+	<h1>Vídeo 2</h1>
+<video width="320" height="240" controls>
+  <source src="video2.mp4" type="video/mp4">
+</video>
+	<h1>Vídeo do YouTube</h1>
+	      <iframe width="560" height="315" src="https://www.youtube.com/embed/UuMOJhM2Q10?si=whwGXhVEedhQTqTG" title="YouTube video player" 
+		      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+		      picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
 </html>
