@@ -1,26 +1,26 @@
 export default [
   {
-    src: "./src/Thats what i like - musica1.mp3",
+	  <source src="musica1.mp3" type="audio/mpeg">
     name: "Thats what i like - Bruno Mars",
   },
   {
-    src: "./src/Style - musica2.mp3",
+	  <source src="musica2.mp3" type="audio/mpeg">
     name: "Style - Taylor Swift",
   },
    {
-    src: "./src/Thats what i like - musica1.mp3",
+	  <source src="musica1.mp3" type="audio/mpeg">
     name: "Thats what i like - Bruno Mars",
   },
   {
-    src: "./src/Style - musica2.mp3",
+	  <source src="musica2.mp3" type="audio/mpeg">
     name: "Style - Taylor Swift",
   },
     {
-    src: "./src/Thats what i like - musica1.mp3",
+	  <source src="musica1.mp3" type="audio/mpeg">
     name: "Thats what i like - Bruno Mars",
   },
   {
-    src: "./src/Style - musica2.mp3",
+	  <source src="musica2.mp3" type="audio/mpeg">
     name: "Style - Taylor Swift",
   },
 ];
