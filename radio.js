@@ -8,7 +8,7 @@ const duration = document.querySelector("#duration");
 const progressBar = document.querySelector(".progress-bar");
 const progress = document.querySelector(".progress");
 
-import songs from "./songs.js";
+import songs from "./musicas.js";
 
 const textButtonPlay = "<i class='bx bx-caret-right'></i>";
 const textButtonPause = "<i class='bx bx-pause'></i>";
