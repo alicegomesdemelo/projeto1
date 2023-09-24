@@ -4,12 +4,12 @@ let isPlaying = false;
 
 const music_list = [
     {
-        name: 'Nome da Música 1',
-        music: 'caminho/da/musica1.mp3'
+        name: 'Baby',
+        music : 'musicas/Baby.mp3'
     },
     {
-        name: 'Nome da Música 2',
-        music: 'caminho/da/musica2.mp3'
+        name: 'Style',
+        music : 'musicas/Style.mp3'
     },
     // Adicione mais músicas conforme necessário
 ];
