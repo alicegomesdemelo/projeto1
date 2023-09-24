@@ -23,27 +23,27 @@ let updateTimer;
 const music_list = [
     {
         img : 'imagens/dods.png',
-        name : 'Stay',
-        artist : 'The Kid LAROI, Justin Bieber',
-        music : 'musicas/musica1.mp3'
+        name : 'Baby',
+        artist : 'Justin Bieber',
+        music : 'musicas/Baby.mp3'
     },
     {
         img : 'imagens/frutos.png',
-        name : 'Falling Down',
-        artist : 'Wid Cards',
-        music : 'musicas/musica2.mp3'
+        name : 'Style',
+        artist : 'Taylor Swift',
+        music : 'musicas/Style.mp3'
     },
     {
-        img : 'imagens/dods.png',
-        name : 'Faded',
-        artist : 'Alan Walker',
-        music : 'musicas/musica1.mp3'
+        img : 'imagens/chiquinho.png',
+        name : 'That's What I Like',
+        artist : 'Bruno Mars',
+        music : 'musicas/That's What I Like.mp3'
     },
     {
-        img : 'imagens/frutos.png',
-        name : 'Rather Be',
-        artist : 'Clean Bandit',
-        music : 'musicas/musica2.mp3'
+        img : 'imagens/sushi.png',
+        name : 'Starboy',
+        artist : 'The Weeknd',
+        music : 'musicas/Starboy.mp3'
     }
 ];
 
