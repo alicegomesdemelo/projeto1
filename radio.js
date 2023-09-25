@@ -85,6 +85,12 @@ function loadTrack(track_index){
     clearInterval(updateTimer);
     reset();
 
+    if (track_index < 0) {
+        track_index = music_list.length - 1;
+    } else if (track_index >= music_list.length) {
+        track_index = 0;
+    }
+
     curr_track.src = music_list[track_index].music;
     curr_track.load();
 
