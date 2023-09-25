@@ -1,4 +1,4 @@
-let now_playing = document.querySelector('.now-playing');
+//botões
 let track_art = document.querySelector('.track-art');
 let track_name = document.querySelector('.track-name');
 let track_artist = document.querySelector('.track-artist');
@@ -16,9 +16,10 @@ let track_index = 0;
 let isPlaying = false;
 let updateTimer;
 
+//lista de música
 const music_list = [
     {
-        img : 'imgradio/Baby.jpg',
+        img : 'imgradio/Baby.png',
         name : 'Baby',
         artist : 'Justin Bieber',
         music : 'musicas/Baby.mp3'
@@ -31,43 +32,43 @@ const music_list = [
     },
     {
         img : 'imgradio/DoIWannaKnow.jpg',
-        name : "Do I Wanna Know",
+        name : 'Do I Wanna Know',
         artist : 'Arctic Monkeys',
-        music : "musicas/DoIWannaKnow.mp3"
-    },
+        music : 'musicas/DoIWannaKnow.mp3'
+    }, 
     {
         img : 'imgradio/Flawless.jpg',
         name : 'Flawless',
         artist : 'The Neighbourhood',
         music : 'musicas/Flawless.mp3'
-    },
+    }, 
     {
-        img : 'imgradio/LoveStory.jpg',
-        name : 'Love Story',
-        artist : 'Indila',
-        music : 'musicas/LoveStory.mp3'
+        img : 'imgradio/Positions.jpg',
+        name : 'Positions',
+        artist : 'Ariana Grande',
+        music : 'musicas/Positions.mp3'
     },
     {
         img : 'imgradio/Salvatore.jpg',
         name : 'Salvatore',
         artist : 'Lana Del Rey',
         music : 'musicas/Salvatore.mp3'
-    },
+    }, 
     {
-        img : 'imgradio/Starboy.jpg',
+        img : 'imgradio/Starboy.png',
         name : 'Starboy',
         artist : 'The Weeknd',
         music : 'musicas/Starboy.mp3'
-    },
+    }, 
     {
         img : 'imgradio/Style.png',
         name : 'Style',
         artist : 'Taylor Swift',
         music : 'musicas/Style.mp3'
-    },
+    }, 
     {
         img : 'imgradio/ThatsWhatILike.png',
-        name : 'That's What I Like',
+        name : 'That´s What I Like',
         artist : 'Bruno Mars',
         music : 'musicas/ThatsWhatILike.mp3'
     },
@@ -79,6 +80,7 @@ const music_list = [
     }
 ];
 
+//Funão para tocar a lista de músicas
 loadTrack(track_index);
 
 function loadTrack(track_index){
@@ -91,35 +93,39 @@ function loadTrack(track_index){
     track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
     track_name.textContent = music_list[track_index].name;
     track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Playing music " + (track_index + 1) + " of " + music_list.length;
 
     updateTimer = setInterval(setUpdate, 1000);
 
     curr_track.addEventListener('ended', nextTrack);
 }
 
+//Função de minutagem da música atual
 function reset(){
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
     seek_slider.value = 0;
 }
 
+//Função para alternar entre play e pause na música atual
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
 
+//Função para iniciar a música 
 function playTrack(){
     curr_track.play();
     isPlaying = true;
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
 
+//Função para pausar a música 
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
 
+//Função para avançar à próxima música 
 function nextTrack(){
     if(track_index < music_list.length - 1){
         track_index += 1;
@@ -130,6 +136,7 @@ function nextTrack(){
     playTrack();
 }
 
+//Função para retroceder à música anterior
 function prevTrack(){
     if(track_index > 0){
         track_index -= 1;
@@ -140,6 +147,7 @@ function prevTrack(){
     playTrack();
 }
 
+//Funções para percorrer o tempo da música
 function seekTo(){
     let seekto = curr_track.duration * (seek_slider.value / 100);
     curr_track.currentTime = seekto;
