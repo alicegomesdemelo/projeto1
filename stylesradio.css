@@ -134,15 +134,6 @@ p {
     animation: rotation 8s infinite linear;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
-
 .loader {
     height: 70px;
     display: flex;
@@ -157,16 +148,4 @@ p {
     border-radius: 50px;
     margin: 0 5px;
     animation: animate 1.4s linear infinite;
-}
-
-@keyframes animate {
-    50% {
-        height: 20%;
-        background: #4286f4;
-    }
-
-    100% {
-        background: #4286f4;
-        height: 100%;
-    }
 }
