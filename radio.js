@@ -11,11 +11,10 @@ let seek_slider = document.querySelector('.seek_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
 let wave = document.getElementById('wave');
-
+let curr_track = document.createElement('audio');
 
 let track_index = 0;
 let isPlaying = false;
-let isRandom = false;
 let updateTimer;
 
 const music_list = [
@@ -33,9 +32,9 @@ const music_list = [
     },
     {
         img : 'imagens/chiquinho.png',
-        name : 'That's What I Like',
+        name : "That's What I Like",
         artist : 'Bruno Mars',
-        music : 'musicas/That's What I Like.mp3'
+        music : "musicas/That's What I Like.mp3"
     },
     {
         img : 'imagens/sushi.png',
@@ -62,61 +61,44 @@ function loadTrack(track_index){
     updateTimer = setInterval(setUpdate, 1000);
 
     curr_track.addEventListener('ended', nextTrack);
-    random_bg_color();
 }
 
-function random_bg_color(){
-    let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
-    let a;
-
-    function populate(a){
-        for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
-            let y = hex[x];
-            a += y;
-        }
-        return a;
-    }
-    
-}
-
-
-function playRandom(){
-    isRandom = true;
-    randomIcon.classList.add('randomActive');
-}
-function pauseRandom(){
-    isRandom = false;
-    randomIcon.classList.remove('randomActive');
+function reset(){
+    curr_time.textContent = "00:00";
+    total_duration.textContent = "00:00";
+    seek_slider.value = 0;
 }
 
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
+
 function playTrack(){
     curr_track.play();
     isPlaying = true;
     track_art.classList.add('rotate');
     wave.classList.add('loader');
+    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
+
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
     track_art.classList.remove('rotate');
     wave.classList.remove('loader');
+    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
+
 function nextTrack(){
-    if(track_index < music_list.length - 1 && isRandom === false){
+    if(track_index < music_list.length - 1){
         track_index += 1;
-    }else if(track_index < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(Math.random() * music_list.length);
-        track_index = random_index;
     }else{
         track_index = 0;
     }
     loadTrack(track_index);
     playTrack();
 }
+
 function prevTrack(){
     if(track_index > 0){
         track_index -= 1;
@@ -126,6 +108,7 @@ function prevTrack(){
     loadTrack(track_index);
     playTrack();
 }
+
 function seekTo(){
     let seekto = curr_track.duration * (seek_slider.value / 100);
     curr_track.currentTime = seekto;
