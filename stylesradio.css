@@ -60,7 +60,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin-bottom: 30px;
-    gap: 20px; /* Adicionando espaço entre os botões */
+    gap: 20%; 
 }
 
 .seek_slider,
