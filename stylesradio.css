@@ -55,19 +55,21 @@ body {
     font-size: 1.5rem;
 }
 
-buttons {
+.buttons {
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
-    align-items: center;
+    align-items: center; 
     margin-bottom: 30px;
 }
 
 .prev-track,
+.playpause-track,
 .next-track {
     padding: 25px;
     opacity: 0.8;
     transition: opacity .2s;
+    flex: 1; 
+    text-align: center; 
 }
 
 .playpause-track {
