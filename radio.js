@@ -24,6 +24,42 @@ const music_list = [
         music : 'musicas/Baby.mp3'
     },
     {
+        img : 'imgradio/CruelSummer.jpg',
+        name : 'Cruel Summer',
+        artist : 'Taylor Swift',
+        music : 'musicas/CruelSummer.mp3'
+    },
+    {
+        img : 'imgradio/DoIWannaKnow.jpg',
+        name : "Do I Wanna Know",
+        artist : 'Arctic Monkeys',
+        music : "musicas/DoIWannaKnow.mp3"
+    },
+    {
+        img : 'imgradio/Flawless.jpg',
+        name : 'Flawless',
+        artist : 'The Neighbourhood',
+        music : 'musicas/Flawless.mp3'
+    },
+    {
+        img : 'imgradio/LoveStory.jpg',
+        name : 'Love Story',
+        artist : 'Indila',
+        music : 'musicas/LoveStory.mp3'
+    },
+    {
+        img : 'imgradio/Salvatore.jpg',
+        name : 'Salvatore',
+        artist : 'Lana Del Rey',
+        music : 'musicas/Salvatore.mp3'
+    },
+    {
+        img : 'imgradio/Starboy.jpg',
+        name : 'Starboy',
+        artist : 'The Weeknd',
+        music : 'musicas/Starboy.mp3'
+    },
+    {
         img : 'imgradio/Style.png',
         name : 'Style',
         artist : 'Taylor Swift',
@@ -31,15 +67,15 @@ const music_list = [
     },
     {
         img : 'imgradio/ThatsWhatILike.png',
-        name : "That's What I Like",
+        name : 'That's What I Like',
         artist : 'Bruno Mars',
-        music : "musicas/ThatsWhatILike.mp3"
+        music : 'musicas/ThatsWhatILike.mp3'
     },
     {
-        img : 'imgradio/Starboy.jpg',
-        name : 'Starboy',
-        artist : 'The Weeknd',
-        music : 'musicas/Starboy.mp3'
+        img : 'imgradio/WatermelonSugar.jpg',
+        name : 'Watermelon Sugar',
+        artist : 'Harry Styles',
+        music : 'musicas/WatermelonSugar.mp3'
     }
 ];
 
