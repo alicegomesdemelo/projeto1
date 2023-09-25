@@ -18,25 +18,25 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'imagens/dods.png',
+        img : 'imgradio/Baby.jpg',
         name : 'Baby',
         artist : 'Justin Bieber',
         music : 'musicas/Baby.mp3'
     },
     {
-        img : 'imagens/frutos.png',
+        img : 'imgradio/Style.png',
         name : 'Style',
         artist : 'Taylor Swift',
         music : 'musicas/Style.mp3'
     },
     {
-        img : 'imagens/chiquinho.png',
+        img : 'imgradio/ThatsWhatILike.png',
         name : "That's What I Like",
         artist : 'Bruno Mars',
         music : "musicas/ThatsWhatILike.mp3"
     },
     {
-        img : 'imagens/sushi.png',
+        img : 'imgradio/Starboy.jpg',
         name : 'Starboy',
         artist : 'The Weeknd',
         music : 'musicas/Starboy.mp3'
