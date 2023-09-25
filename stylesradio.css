@@ -55,12 +55,26 @@ body {
     font-size: 1.5rem;
 }
 
-.buttons {
+buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; 
     align-items: center;
     margin-bottom: 30px;
-    gap: 50px; 
+}
+
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.playpause-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    margin: 0 auto; 
 }
 
 .seek_slider,
