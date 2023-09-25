@@ -33,7 +33,7 @@ const music_list = [
         img : 'imagens/chiquinho.png',
         name : "That's What I Like",
         artist : 'Bruno Mars',
-        music : "musicas/That's What I Like.mp3"
+        music : "musicas/ThatsWhatILike.mp3"
     },
     {
         img : 'imagens/sushi.png',
